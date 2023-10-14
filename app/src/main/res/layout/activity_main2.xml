@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#339C27B0"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/img_item_product"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"
+        tools:srcCompat="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/txt_name_item_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_product"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="کیف چرمی"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_price_item_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_item_product"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="220,000T"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_act2_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price_item_product"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="@+id/img_item_product"
+        app:layout_constraintEnd_toEndOf="@+id/img_item_product"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:backgroundTint="#339C27B0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
